@@ -10,7 +10,7 @@ class MobileBankApiTestV1 {
     @Test
     void shouldReturnDemoAccounts() {
         // Given - When - Then
-// Предусловия
+        // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
                 .body("some data") // отправляемые данные (заголовки и query можно выставлять аналогично)
@@ -20,7 +20,7 @@ class MobileBankApiTestV1 {
 // Проверки
                 .then()
                 .statusCode(200)
-                .contentType(ContentType.JSON)
+                .contentType( ContentType.JSON)
                 .body("data", equalTo("some data"))
         ;
     }
